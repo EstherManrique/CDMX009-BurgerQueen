@@ -18,14 +18,14 @@ body {
     zoom: 1;
 }
 
-.azul {
+.contentWrapper {
     width: 60%;
     display: flex;
     justify-content: center;
     margin-top: 8%;
 }
 
-.naranja {
+.wraperSeccionBottons {
     text-align: center;
 }
 
