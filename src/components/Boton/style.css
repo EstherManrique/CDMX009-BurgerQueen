@@ -1,0 +1,9 @@
+.bg-feo{
+    background-color: blue;
+}
+
+.bg-bonito{
+    background-color: pink;
+    width: 3rem;
+    position: fixed;
+}

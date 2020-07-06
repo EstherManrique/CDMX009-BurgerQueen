@@ -1,8 +1,9 @@
 import React from 'react';
+import './style.css'
 
-const Button = props => (
-<a href={props.url} class={props.class}>{props.content}
-</a>
+const Button = ({ allstyles, text }) => (
+    <button className={allstyles}> {text}
+    </button>
 );
 
 export default Button

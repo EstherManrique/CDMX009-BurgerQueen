@@ -1,5 +1,7 @@
-body {
+.containerLogin {
     background: url("../../assets/imgs/BgLogin.png") no-repeat top right;
+    height: 100vh;
+    width: 100vw;
 }
 
 .iconWaiter {
