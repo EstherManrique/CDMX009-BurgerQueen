@@ -1,9 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BurgerLogin from '../../assets/imgs/BurgerLogin1.png';
-import Triangulo from '../../assets/imgs/Triangulo.png'
-import Waiter from '../../assets/imgs/waiter.png';
-import HatCheff from '../../assets/imgs/hat-chef.png';
 
 import styles from './BackgLogin.module.css'
 import Logo from '../Logo/Logo';
@@ -12,24 +8,26 @@ import Logo from '../Logo/Logo';
 const BackgLogin = () => (
     <div className={styles.containerLogin}>
         <Logo />
-       
 
-            <img src={Triangulo} className={styles.triangle} alt=""/>
 
-            <img className={styles.burgerLogin} src={BurgerLogin} alt="" />
+        <div className={styles.azul}>
+            <div className={styles.naranja}>
 
-            <Link to="/waiter">
-            <img className={styles.IconWaiter} src={Waiter} alt="" />
-            <button type="button" className={styles.buttonWaiter}>Mesero</button>
-            
-            
-            </Link>
+                <Link to="/waiter" className={styles.ancore}>
+                    <span className={styles.iconWaiter}></span>
+                    <button type="button" className={styles.buttonWaiter}>Mesero</button>
+                </Link>
+            </div>
 
-            {/* Agregar ruta Link */}
-            <img className={styles.IconHatCheff} src={HatCheff} alt="" />
-            <button type="button" className={styles.buttonChef}>Cocina</button>
+            <div className={styles.naranja}>
+                <Link to="/waiter" className={styles.ancore}>
+                    <span className={styles.iconHatCheff}></span>
+                    <button type="button" className={styles.buttonChef}>Cocina</button>
+                </Link>
+            </div>
 
-        
+        </div>
+
 
     </div>
 );

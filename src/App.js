@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 
-import Logo from './components/Logo/Logo.js';
+
 import BackgLogin from './components/BackgLogin';
 import InitWaiters from './components/InitWaiter';
 import './App.css';
@@ -16,12 +16,12 @@ function App() {
     <div className="App">
       <Router>
 
-      <Route exact path="/" component={BackgLogin} />
-    
-      <Route exact path="/waiter" component={InitWaiters} />   
-      
+        <Route exact path="/" component={BackgLogin} />
+
+        <Route exact path="/waiter" component={InitWaiters} />
+
       </Router>
-      
+
 
     </div>
   );

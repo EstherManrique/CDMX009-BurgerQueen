@@ -1,8 +1,9 @@
 .logoLogin {
-position: absolute;
-width: 695px;
-height: 368px;
-left: 30px;
-top: 79px;
+    width: 56%;
+    height: auto;
+}
 
+.logoWrapper {
+    padding: 35px;
+    margin-top: 3%;
 }

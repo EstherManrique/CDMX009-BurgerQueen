@@ -1,47 +1,37 @@
-.body {
-    background-image: url("../../assets/imgs/Triangulo.png");
+body {
+    background: url("../../assets/imgs/BgLogin.png") no-repeat top right;
 }
-/* .triangle {
-    width: 74%;
-    height: auto;
 
-} */
-.containerLogin {
+.iconWaiter {
+    background: url("../../assets/imgs/waiter.png") no-repeat top right;
+    width: 205px;
+    height: 195px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.iconHatCheff {
+    background: url("../../assets/imgs/hat-chef.png");
+    width: 205px;
+    height: 205px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.azul {
+    width: 60%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 8%;
 }
 
-.burgerLogin {
-    width: 800px;
-    height: auto;
-    left: 640px;
-    top: -226px;
-    position: fixed;
-}
-
-
-
-.IconWaiter {
-    position: absolute;
-    width: 16%;
-    left: 194px;
-    top: 550px;
-}
-
-.IconHatCheff {
-    position: absolute;
-    width: 15%;
-    left: 528px;
-    top: 574px;
+.naranja {
+    text-align: center;
 }
 
 .buttonWaiter {
-    position: absolute;
     width: 230px;
     height: 60px;
-    left: 194px;
-    top: 780px;
     background: #ED3367;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 8px 8px 5px rgba(0, 0, 0, 0.25);
@@ -51,7 +41,6 @@
 }
 
 .buttonChef {
-    position: absolute;
     width: 230px;
     height: 60px;
     left: 520px;
