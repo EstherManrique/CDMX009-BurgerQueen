@@ -1,9 +1,9 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  //Switch,
   Route,
-  Link
+  //Link
 } from "react-router-dom";
 
 import BackgLogin from './components/BackgLogin';

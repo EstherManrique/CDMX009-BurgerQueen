@@ -34,12 +34,10 @@ const InitWaiters = () => {
       </div>
 
       <div className={styles.initWaiter}>
-
         <div>
-
           <div className={styles.dataWaiter}>
             <img src={ImgWaiter} className={styles.imgWaiter} alt="" />
-            <Select options={options} className={styles.nameWaiter} />
+            <Select options={options} className={styles.nameWaiter} name="name-waiter"/>
             {/* <input type="text" placeholder="Nombre del Mesero" className={styles.nameWaiter} /> */}
           </div>
 
@@ -47,7 +45,7 @@ const InitWaiters = () => {
             <img src={ImgCostumer} className={styles.imgCostumer} alt="" />
             <div className={styles.dataUtensils}>
               <img src={ImgUtensils} className={styles.imgUtensils} alt="" />
-              <input type="text" placeholder="Ingrese Nombre del Cliente" className={styles.nameCostumer} />
+              <input type="text" placeholder="Ingrese Nombre del Cliente" className={styles.nameCostumer} name="name-costumer"/>
             </div>
           </div>
 
@@ -58,7 +56,7 @@ const InitWaiters = () => {
               <div className={styles.numberTable} >
                 <p> No. Mesa </p>
                 <label htmlFor="">
-                  <input type="text" placeholder="No." className={styles.numberTableData} />
+                  <input type="text" placeholder="No." className={styles.numberTableData} name="number-table"/>
                 </label>
               </div>
             </div>
@@ -66,7 +64,7 @@ const InitWaiters = () => {
             <div className={styles.numberPeople}>
               <p>No. Personas</p>
               <label htmlFor="">
-                <input type="text" placeholder="No." className={styles.numberPeopleData} />
+                <input type="text" placeholder="No." className={styles.numberPeopleData} name="number-people"/>
               </label>
             </div>
           </div>
