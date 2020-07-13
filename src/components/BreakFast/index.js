@@ -9,19 +9,25 @@ import CoffeMilk from '../../assets/imgs/coffe-milk.jpg';
 import Sandwich from '../../assets/imgs/sandwich.jpg';
 import Juice from '../../assets/imgs/orange-juice.jpg'
 
-const BreakFast = () => {
-
-    const [order, setOrder] = useState({
-        coffe: '',
-        coffemilk: '',
+const BreakFast = (props) => { const initOrder = {
+        coiffeeBlack: '',
+        coffeeMilk: '',
         juice: '',
         sandwich: ''
-    })
-
-    const addOrder = e => {
-        e.preventDefault();
-        console.log('me puchassss')
     }
+
+    const [order, setOrder] = useState(initOrder);
+
+    const addOrder = (data, e) => {
+        const {name, value} = e.target;        
+        setOrder({
+            ...order,
+            data
+        });
+        console.log('me puchassss', data, e)
+    }
+
+
     return (
         <div className={styles.breakFastPage}>
             <div className={styles.headerWrapper}>
@@ -38,33 +44,30 @@ const BreakFast = () => {
                 <div className={styles.menuBreakfast}>
                     <div className={styles.breakfast}>
 
-                        <button className={styles.bgMenu} onClick={addOrder} name="coffe-black">
+                        <button className={styles.bgMenu} onClick={addOrder} name="coffeeBlak">
                             <img src={Coffe} alt=""/>
-                            <h3>Cafe Americano <br/> $5.00</h3>
+                            <h3 name="Cafe-Americano">Cafe Americano <br/> $5.00</h3>
                         </button>
 
-                        <div className={styles.bgMenu}>
+                        <button className={styles.bgMenu} onClick={addOrder} name="coffeeMilk">
                             <img src={CoffeMilk} alt=""/>
                             <h3>Cafe con Leche <br/> $7.00</h3>
-                        </div>
+                        </button>
                     </div>
 
                     <div className={styles.breakfast}>
-                        <div className={styles.bgMenu}>
+                        <button className={styles.bgMenu} onClick={addOrder} name="sandwich">
                             <img src={Sandwich} alt=""/>
                             <h3>Sandwich <br/> $10.00</h3>
-                        </div>
+                        </button>
                     
-                        <div className={styles.bgMenu}>
+                        <button className={styles.bgMenu} onClick={addOrder} name="juice">
                             <img src={Juice} alt=""/>
                             <h3>Jugo <br/> $7.00</h3>
-                        </div>
-                    </div>
-                    
-                
-                    
-
+                        </button>
+                    </div>                               
                 </div>
+
                 <div className={styles.order}>
                     <DateTime />
 
@@ -72,7 +75,7 @@ const BreakFast = () => {
 
                     <div className={styles.dataTableLabel}>
                         <div className={styles.numberTable} >
-                            <p> No. Mesa </p>
+                            <p> No. Mesa {props.client.numtable}</p>
                             <label htmlFor="">
                             <input type="text" placeholder="No." className={styles.numberTableData} />
                             </label>
@@ -85,18 +88,27 @@ const BreakFast = () => {
                             <input type="text" placeholder="No." className={styles.numberPeopleData} />
                         </label>
                     </div>
+                <ul>
+                    <li>
+                        Cafe Americano {}  Cant {}
+                    </li>
+                    <li>
+                        Cafe con Lecge {}  Cant {}
+                    </li>
+                    <li>
+                        Jugo {}  Cant {}
+                    </li>
+                    <li>
+                        Sandwich {}  Cant {}
+                    </li>
+                </ul>
+
+
+
+
+
+
                 </div>
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
             <Link to="waiter">

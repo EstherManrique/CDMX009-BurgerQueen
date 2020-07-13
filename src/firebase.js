@@ -14,4 +14,4 @@
   // Initialize Firebase
   const fb = firebase.initializeApp(firebaseConfig);
 
-  export const dataBase = fb.firestore()
+  export const db = fb.firestore()
