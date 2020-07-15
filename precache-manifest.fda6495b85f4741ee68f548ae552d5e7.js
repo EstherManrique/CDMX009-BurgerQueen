@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d9e011353812e33cb5238757efff73e",
+    "revision": "a6f17526808efece9c47d615793e45a6",
     "url": "/github.io/CDMX009-BurgerQueen/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github.io/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "08527d01cdbe4c56a9d5",
-    "url": "/github.io/CDMX009-BurgerQueen/static/css/main.bb55953d.chunk.css"
+    "revision": "9469afdfb30490f6591f",
+    "url": "/github.io/CDMX009-BurgerQueen/static/css/main.55305b40.chunk.css"
   },
   {
     "revision": "08be5902e21a7190c216",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github.io/CDMX009-BurgerQueen/static/js/2.f7f8607a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "08527d01cdbe4c56a9d5",
-    "url": "/github.io/CDMX009-BurgerQueen/static/js/main.5571d0d0.chunk.js"
+    "revision": "9469afdfb30490f6591f",
+    "url": "/github.io/CDMX009-BurgerQueen/static/js/main.2b2a5696.chunk.js"
   },
   {
     "revision": "9f686b5f669ab5931a1b",

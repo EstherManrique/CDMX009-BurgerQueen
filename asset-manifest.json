@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/github.io/CDMX009-BurgerQueen/static/css/main.bb55953d.chunk.css",
-    "main.js": "/github.io/CDMX009-BurgerQueen/static/js/main.5571d0d0.chunk.js",
-    "main.js.map": "/github.io/CDMX009-BurgerQueen/static/js/main.5571d0d0.chunk.js.map",
+    "main.css": "/github.io/CDMX009-BurgerQueen/static/css/main.55305b40.chunk.css",
+    "main.js": "/github.io/CDMX009-BurgerQueen/static/js/main.2b2a5696.chunk.js",
+    "main.js.map": "/github.io/CDMX009-BurgerQueen/static/js/main.2b2a5696.chunk.js.map",
     "runtime-main.js": "/github.io/CDMX009-BurgerQueen/static/js/runtime-main.c3dad70d.js",
     "runtime-main.js.map": "/github.io/CDMX009-BurgerQueen/static/js/runtime-main.c3dad70d.js.map",
     "static/css/2.af3c1da9.chunk.css": "/github.io/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css",
     "static/js/2.f7f8607a.chunk.js": "/github.io/CDMX009-BurgerQueen/static/js/2.f7f8607a.chunk.js",
     "static/js/2.f7f8607a.chunk.js.map": "/github.io/CDMX009-BurgerQueen/static/js/2.f7f8607a.chunk.js.map",
     "index.html": "/github.io/CDMX009-BurgerQueen/index.html",
-    "precache-manifest.244474d73cd397fd47876ac4e64d4e46.js": "/github.io/CDMX009-BurgerQueen/precache-manifest.244474d73cd397fd47876ac4e64d4e46.js",
+    "precache-manifest.fda6495b85f4741ee68f548ae552d5e7.js": "/github.io/CDMX009-BurgerQueen/precache-manifest.fda6495b85f4741ee68f548ae552d5e7.js",
     "service-worker.js": "/github.io/CDMX009-BurgerQueen/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/github.io/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.bb55953d.chunk.css.map": "/github.io/CDMX009-BurgerQueen/static/css/main.bb55953d.chunk.css.map",
+    "static/css/main.55305b40.chunk.css.map": "/github.io/CDMX009-BurgerQueen/static/css/main.55305b40.chunk.css.map",
     "static/js/2.f7f8607a.chunk.js.LICENSE.txt": "/github.io/CDMX009-BurgerQueen/static/js/2.f7f8607a.chunk.js.LICENSE.txt",
     "static/media/BackgLogin.module.css": "/github.io/CDMX009-BurgerQueen/static/media/hat-chef.dae19e72.png",
     "static/media/Logo_BQ.png": "/github.io/CDMX009-BurgerQueen/static/media/Logo_BQ.0268b4ca.png",
@@ -41,7 +41,7 @@
     "static/js/runtime-main.c3dad70d.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.f7f8607a.chunk.js",
-    "static/css/main.bb55953d.chunk.css",
-    "static/js/main.5571d0d0.chunk.js"
+    "static/css/main.55305b40.chunk.css",
+    "static/js/main.2b2a5696.chunk.js"
   ]
 }
