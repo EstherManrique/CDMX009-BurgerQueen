@@ -1,23 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Boton from '../Boton/Boton'
+import TableWaiter from '../Tables/TableWaiter';
 
-const WaiterRegister = () => (
+const WaiterRegister = () => {
 
-    <div>
-        <h1>Estoy en la vista 5 Esther</h1>
+    return (
+        <Fragment>
+            
+            <TableWaiter />
 
-        <Link to="waiter">
+            <Link to="waiter">
+                <Boton text={"Regresar"} allstyles={"pagina-5-Esther"} />
+            </Link>
 
-            <Boton text={"Regresar"} allstyles={"pagina-5-Esther"} />
-        </Link>
 
+            <Link to="waiteraccount">
+                <Boton text={"Editar"} allstyles={"buttonOutWaiter"} />
+            </Link>
 
-        <Link to="waiteraccount">
-            <Boton text={"Editar"} allstyles={"buttonOutWaiter"} />
-        </Link>
-
-    </div>
-);
+        </Fragment>
+    );
+};
 
 export default WaiterRegister;

@@ -1,0 +1,45 @@
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logoBreakFast {
+  width: 30%;
+  margin-left: 50px;
+}
+
+
+.titleBreakfast {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2.5em;   
+}
+
+.iconHeader {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.2em;
+  align-items: center;
+  justify-content: space-around;    
+}
+
+.iconWaiterBreakFast {
+  background: url('../../assets/imgs/waiter.png') no-repeat;
+  width: 205px;
+  height: 195px;
+  margin-right: 80px;    
+}
+
+.table {
+  width: 90%;
+  margin-bottom: 1rem;
+  color: #212529;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.columns {
+  width: 20%;
+}
