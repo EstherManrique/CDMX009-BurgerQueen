@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import 'firebase/app';
+import db from '../../firebase';
 import LogoSmall from '../../assets/imgs/Logo_BQ.png';
 import ImgWaiter from '../../assets/imgs/waiter.png';
 import ImgCostumer from '../../assets/imgs/Costumer.png';
 import ImgTable from '../../assets/imgs/Table.png';
 import ImgUtensils from '../../assets/imgs/Trastes.jpg';
-import PeopleFood from '../../assets/imgs/people-food.jpg';
 import Breakfast from '../../assets/imgs/coffe-break.png';
 import Lunch from '../../assets/imgs/burger-lunch.jpg';
 
@@ -20,26 +21,30 @@ const options = [
   { value: 3, label: 'Phoebe Buffay' }
 ]
 
-const InitWaiters = ({ client, setClient, order, setOrder }) => {
+const InitWaiters = ({ client, setClient, order, setOrder, }) => {
 
   const handleInputsClient = (e) => {
     const { name, value } = e.target;
-    setClient({ ...client, [name]: value });
-    //console.log(name, value);
+    setClient({ ...client, [name]: value });  //que copie los valores actuales
   }
 
   //funcion para boton ordenar (enviar los datos de los inputs a ??)
-  const handleOrder = (e) => {
-    e.preventDefault();
-    console.log(client);
-    /*     crudDataFB() */
+
+  const handleOrder = async (objectsData) => {
+    objectsData.preventDefault();
+    // console.log(client);
+    // db.collection('data').doc().set(objectsData);
+    console.log('new data entered by the waiter', client)
+
   }
 
+  // const handleOrder = async (objectsData) => {
+  //   await objectsData.preventDefault();
+  //   // console.log(client);
+  //   db.collection('data').doc().set(objectsData);
+  //   console.log('   new data entered by the waiter')
 
-  const numOrder = () => {
-    console.log('me puchas', setOrder);
-    setOrder(order + 1)
-  }
+  // }
 
   return (
 
@@ -127,7 +132,7 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
 
         <div className={styles.containerFood}>
 
-          <Link to="/breakfast" className={styles.lineLinks} onClick={numOrder}>
+          <Link to="/breakfast" className={styles.lineLinks}>
             <div className={styles.bgFoodBreak}>
               <img src={Breakfast} alt="" className={styles.imageFood} />
               <p className={styles.titleMenu}>Desayunos</p>

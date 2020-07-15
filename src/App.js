@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import firebase from './firebase';
+import 'firebase/app';
+import 'firebase/firestore';
 import {
   BrowserRouter as Router,
   //Switch,
@@ -13,7 +16,6 @@ import RestDay from './components/RestDay';
 import WaiterRegister from './components/WaiterRegister';
 import WaiterAccount from './components/WaiterAccount';
 import Kitchen from './components/Kitchen';
-import ReausableTable from './components/ReusableTable';
 
 import './App.css';
 
