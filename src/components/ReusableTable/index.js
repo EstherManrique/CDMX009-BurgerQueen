@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect, } from 'react';
 import styles from './styles.module.css';
 import DateTime from '../DateTime/DateTime';
 import Stepper from "@kiwicom/orbit-components/lib/Stepper";
 
+
+import db from '../../firebase';
+
+
 import IconDelete from '../../assets/imgs/trash.png';
 
-const ReusableTable = ({ client, order }) => {
+const ReusableTable = ({ client, setClient, order, setOrder, menubreak, setMenuBreak }) => {
+    const [orders, setOrders] = useState([])
+    useEffect(() => {
+
+        db.collection('orders').get().then((querySnapshot) => {
+            const data = []
+            querySnapshot.forEach(function (doc) {
+                data.push(doc.data());
+            });
+            setOrders(data);
+        });
+    }, []);
+
 
     return (
         <div className={styles.containerTable}>

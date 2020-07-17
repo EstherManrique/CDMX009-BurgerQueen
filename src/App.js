@@ -16,12 +16,15 @@ import WaiterAccount from './components/WaiterAccount';
 import Kitchen from './components/Kitchen';
 //import ReausableTable from './components/ReusableTable';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-bootstrap/dist/react-bootstrap'
+import 'react-bootstrap/dist/react-bootstrap';
+
+// import TestTable from './components/TestTable'
+// import TrialTable from './components/TrialTable'
 
 import './App.css';
 
 function App() {
-  
+
   const initialDataClient = {
     namewaiter: '',
     nameclient: '',
@@ -32,7 +35,7 @@ function App() {
   const breakfast = {
     coffeblack: '',
     coffemilk: '',
-    sandwich: '' ,   
+    sandwich: '',
     juice: ''
   }
 
@@ -41,7 +44,7 @@ function App() {
 
   const [order, setOrder] = useState(1);
 
-  const [menubreak, setMenuBreak] = useState(breakfast);
+  const [menubreak, setMenubreak] = useState(breakfast);
 
 
   return (
@@ -62,7 +65,7 @@ function App() {
           </Route>
 
           <Route exact path="/breakfast">
-            <BreakFast client={client} setClient={setClient} menubreak={menubreak} setMenuBreak={setMenuBreak} />
+            <BreakFast client={client} setClient={setClient} menubreak={menubreak} setMenubreak={setMenubreak} />
           </Route>
 
           <Route exact path="/restday">

@@ -65,7 +65,6 @@ const Products = {
             label: <ReusableProducts img={Chess} text={"Queso"} price={1} allStyles={"containerProduct"} />
         },
 
-
     ]
 
 }
