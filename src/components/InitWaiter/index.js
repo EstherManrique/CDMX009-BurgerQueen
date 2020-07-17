@@ -25,9 +25,9 @@ const InitWaiters = ({ client, setClient, order, setOrder, menubreak, setMenuBre
 
   const handleInputsClient = (e) => {
     const { name, value } = e.target;
-    setClient({ ...client, [name]: value });
+    setClient({ ...client, ...menubreak, [name]: value });
     //setMenuBreak({ ...menubreak, [name]: value });
-    //console.log(name, value);
+    console.log(name, value);
   }
 
   //funcion para boton ordenar (enviar los datos de los inputs a ??)
