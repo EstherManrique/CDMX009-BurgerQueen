@@ -29,10 +29,19 @@ function App() {
     numpeople: ''
   }
 
+  const breakfast = {
+    coffeblack: '',
+    coffemilk: '',
+    sandwich: '' ,   
+    juice: ''
+  }
+
   //funcion para capturar y controlar el estado de los datos de los inputs(cliente) y la orden.
   const [client, setClient] = useState(initialDataClient);
 
   const [order, setOrder] = useState(1);
+
+  const [menubreak, setMenuBreak] = useState(breakfast);
 
 
   return (
@@ -53,7 +62,7 @@ function App() {
           </Route>
 
           <Route exact path="/breakfast">
-            <BreakFast client={client} setClient={setClient} />
+            <BreakFast client={client} setClient={setClient} menubreak={menubreak} setMenuBreak={setMenuBreak} />
           </Route>
 
           <Route exact path="/restday">

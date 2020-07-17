@@ -21,11 +21,12 @@ const options = [
   { value: 3, label: 'Phoebe Buffay' }
 ]
 
-const InitWaiters = ({ client, setClient, order, setOrder }) => {
+const InitWaiters = ({ client, setClient, order, setOrder, menubreak, setMenuBreak }) => {
 
   const handleInputsClient = (e) => {
     const { name, value } = e.target;
     setClient({ ...client, [name]: value });
+    //setMenuBreak({ ...menubreak, [name]: value });
     //console.log(name, value);
   }
 
@@ -49,7 +50,7 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
       <div className={styles.headerInitWaiter}>
         <Logo nameClass={"logoSmallInitWaiter"} />
         <div className={styles.reg_date}>
-          <Boton text={"Registros"} allstyles={"buttonGoRgWaiter "} />
+          <Boton text={"Registros"} allstyles={"buttonGoRgWaiter"} />
           <DateTime />
         </div>
       </div>

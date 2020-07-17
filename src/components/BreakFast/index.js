@@ -6,16 +6,30 @@ import Juice from '../../assets/imgs/orange-juice.jpg';
 import CoffeMilk from '../../assets/imgs/coffe-milk.jpg';
 import Coffe from '../../assets/imgs/american-coffe.jpg';
 
-
+import db from '../../firebase';
 import Logo from '../Logo/Logo';
 import Boton from '../Boton/Boton'
 import styles from './styles.module.css';
 import ReusableTable from '../ReusableTable/index';
 
 
-const BreakFast = ({ client, setClient, order, setOrder }) => {
+const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak }) => {
 
-    console.log('Breakfast cliente', client);
+/*     const handleButtonsBreak = (e) => {  //VA EN EL ONCHANGE
+        const { name, value } = e.target;
+        setMenuBreak({ ...menubreak, [name]: value });
+    }
+ */
+
+    const handleOrderBreak = (e) => {  //VA EN EL ONCLICK
+        e.preventDefault();
+        db.collection('orders').add(menubreak)
+          .then(() => {
+            console.log('orden guardada en Firestore exitosamente')
+          });
+    }
+
+
 
     return (
 
@@ -34,26 +48,43 @@ const BreakFast = ({ client, setClient, order, setOrder }) => {
             <div className={styles.container}>
                 <div className={styles.menuBreakfast}>
                     <div className={styles.breakfast}>
-                        <div className={styles.bgMenu}>
+
+                        <button
+                        className={styles.bgMenu} 
+                        onClick={handleOrderBreak} 
+                        name="coffeblack"
+                        >
                             <img src={Coffe} alt="" />
                             <h3>Cafe Americano <br /> $5.00</h3>
-                        </div>
+                        </button>
 
-                        <div className={styles.bgMenu}>
+                        <button 
+                        className={styles.bgMenu} 
+                        onClick={handleOrderBreak} 
+                        name="coffemilk"
+                        >
                             <img src={CoffeMilk} alt="" />
                             <h3>Cafe con Leche <br /> $7.00</h3>
-                        </div>
+                        </button>
                     </div>
 
                     <div className={styles.breakfast}>
-                        <div className={styles.bgMenu}>
+                        <button 
+                        className={styles.bgMenu} 
+                        onClick={handleOrderBreak} 
+                        name="sandwich"
+                        >
                             <img src={Sandwich} alt="" />
                             <h3>Sandwich <br /> $10.00</h3>
-                        </div>
-                        <div className={styles.bgMenu}>
+                        </button>
+                        <button 
+                        className={styles.bgMenu} 
+                        onClick={handleOrderBreak} 
+                        name="juice"
+                        >
                             <img src={Juice} alt="" />
                             <h3>Jugo <br /> $7.00</h3>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
