@@ -28,14 +28,13 @@ const InitWaiters = ({ client, setClient, order, setOrder, }) => {
     setClient({ ...client, [name]: value });  //que copie los valores actuales
   }
 
-  //funcion para boton ordenar (enviar los datos de los inputs a ??)
-
-  const handleOrder = async (objectsData) => {
-    objectsData.preventDefault();
-    // console.log(client);
-    // db.collection('data').doc().set(objectsData);
-    console.log('new data entered by the waiter', client)
-
+  //funcion para boton ordenar (enviar los datos de los inputs a ??)  
+  const handleOrder = (e) => {
+    e.preventDefault();
+    db.collection('orders').add(client)
+      .then(() => {
+        console.log('orden guardada en Firestore exitosamente')
+      });
   }
 
   // const handleOrder = async (objectsData) => {
