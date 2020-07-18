@@ -12,6 +12,7 @@ import InitWaiters from './components/InitWaiter';
 import BreakFast from './components/BreakFast';
 import RestDay from './components/RestDay';
 import WaiterRegister from './components/WaiterRegister';
+import KitchenRegister from './components/KitchenRegister';
 import WaiterAccount from './components/WaiterAccount';
 import Kitchen from './components/Kitchen';
 //import ReausableTable from './components/ReusableTable';
@@ -74,6 +75,10 @@ function App() {
 
           <Route exact path="/waiterregister">
             <WaiterRegister client={client} setClient={setClient} order={order} setOrder={setOrder} />
+          </Route>
+
+          <Route exact path="/kitchenregister">
+            <KitchenRegister client={client} setClient={setClient} order={order} setOrder={setOrder} />
           </Route>
 
           <Route exact path="/waiteraccount">

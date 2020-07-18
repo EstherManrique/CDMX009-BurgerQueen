@@ -16,9 +16,9 @@ const BackgLogin = () => (
                     <button type="button" className={styles.buttonWaiter}>Mesero</button>
                 </Link>
             </div>
-
+            
             <div className={styles.wraperSeccionBottons}>
-                <Link to="/waiter">
+                <Link to="/kitchenregister">
                     <span className={styles.iconHatCheff}></span>
                     <button type="button" className={styles.buttonChef}>Cocina</button>
                 </Link>
