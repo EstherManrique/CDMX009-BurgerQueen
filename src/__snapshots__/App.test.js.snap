@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="containerLogin"
+    >
+      <div
+        class="logoWrapper"
+      >
+        <img
+          alt=""
+          class="logoLogin"
+          src="Logo_BQ.png"
+        />
+      </div>
+      <div
+        class="contentWrapper"
+      >
+        <div
+          class="wraperSeccionBottons"
+        >
+          <a
+            href="#/waiter"
+          >
+            <span
+              class="iconWaiter"
+            />
+            <button
+              class="buttonWaiter"
+              type="button"
+            >
+              Mesero
+            </button>
+          </a>
+        </div>
+        <div
+          class="wraperSeccionBottons"
+        >
+          <a
+            href="#/kitchenregister"
+          >
+            <span
+              class="iconHatCheff"
+            />
+            <button
+              class="buttonChef"
+              type="button"
+            >
+              Cocina
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
