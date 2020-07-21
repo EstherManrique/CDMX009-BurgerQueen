@@ -16,9 +16,9 @@ import styles from './styles.module.css';
 import DateTime from '../DateTime/DateTime';
 
 const options = [
-  { value: 1, label: 'Taco López' },
-  { value: 2, label: 'Regina Phalangee' },
-  { value: 3, label: 'Phoebe Buffay' }
+  { value: 'Taco López', label: 'Taco López' },
+  { value: 'Regina Phalangee', label: 'Regina Phalangee' },
+  { value: 'Phoebe Buffay', label: 'Phoebe Buffay' }
 ]
 
 const InitWaiters = ({ client, setClient, order, setOrder }) => {
@@ -33,9 +33,9 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
   const handleOrder = (e) => {
     e.preventDefault();
     db.collection('orders').add(client)
-    .then(() => {
-      console.log('orden guardada en Firestore exitosamente')
-    });
+      .then(() => {
+        console.log('orden guardada en Firestore exitosamente')
+      });
   }
 
   const numOrder = () => {
@@ -64,6 +64,8 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
               options={options}
               className={styles.nameWaiter}
               name="nameWaiter"
+              value={client.namewaiter}
+              onChange={(option) => setClient({ ...client, namewaiter: option.value })}
             // onChange={handleInputsClient}
             />
 
