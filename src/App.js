@@ -31,7 +31,6 @@ function App() {
     numpeople: ''
   }
 
-  //funcion para capturar y controlar el estado de los datos de los inputs(cliente) y la orden.
   const [client, setClient] = useState(initialDataClient);
 
   const [order, setOrder] = useState(0);

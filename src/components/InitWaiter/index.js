@@ -16,17 +16,18 @@ import styles from './styles.module.css';
 import DateTime from '../DateTime/DateTime';
 
 const options = [
-  { value: 1, label: 'Taco López' },
-  { value: 2, label: 'Regina Phalangee' },
-  { value: 3, label: 'Phoebe Buffay' }
+  { label: 'Guadalupe Sánchez', value: 'Guadalupe Sánchez' },
+  { label: 'Azucena Villaseñor', value: 'Azucena Villaseñor' },
+  { label: 'Lalo García', value: 'Lalo García' }
 ]
 
 const InitWaiters = ({ client, setClient, order, setOrder }) => {
 
+
+  //funcion para capturar y controlar el estado de los datos de los inputs(cliente) y la orden.
   const handleInputsClient = (e) => {
     const { name, value } = e.target;
     setClient({ ...client, [name]: value });
-    //console.log(name, value);
   }
 
   //funcion para boton ordenar (enviar los datos de los inputs a ??)
@@ -57,14 +58,15 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
       <div className={styles.initWaiter}>
 
         <div>
-
           <div className={styles.dataWaiter}>
             <img src={ImgWaiter} className={styles.imgWaiter} alt="" />
             <Select
               options={options}
               className={styles.nameWaiter}
-              name="nameWaiter"
-            // onChange={handleInputsClient}
+              name="namewaiter"
+              //value={client.namewaiter}
+              onChange={(option) => setClient({ ...client, namewaiter: option.value })}
+              
             />
 
           </div>
