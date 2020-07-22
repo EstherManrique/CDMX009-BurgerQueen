@@ -13,22 +13,18 @@ import styles from './styles.module.css';
 import ReusableTable from '../ReusableTable';
 
 
-const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak }) => {
+const BreakFast = ({ client, setClient, order, setOrder, addItemToOrder }) => {
 
-/*     const handleButtonsBreak = (e) => {  //VA EN EL ONCHANGE
-        const { name, value } = e.target;
-        setMenuBreak({ ...menubreak, [name]: value });
+      //funcion para capturar y controlar el estado de los datos de los inputs(cliente) y la orden.
+    const handleBreakfast = (e) => {
+    const {item, id, name, value } = e.target;
+    setClient({ ...order, [name]: value });
+    console.log('Agregar Item')
     }
- */
 
-    const handleOrderBreak = (e) => {  //VA EN EL ONCLICK
-        e.preventDefault();
-        console.log('Agregar cafe');
-        db.collection('orders').add(menubreak)
-          .then(() => {
-            console.log('orden guardada en Firestore exitosamente')
-          });
-    }
+
+
+
 
     return (
 
@@ -50,8 +46,10 @@ const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak
 
                         <button
                         className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="coffeblack"
+                        onClick={()=>
+                            addItemToOrder({id: 1, name: "Cafe Americano"})
+                        } 
+                            //name="coffeblack"
                         >
                             <img src={Coffe} alt="" />
                             <h3>Cafe Americano <br /> $5.00</h3>
@@ -59,8 +57,10 @@ const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak
 
                         <button 
                         className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="coffemilk"
+                        onClick={()=>
+                            addItemToOrder({id: 2, name: "Cafe con Leche"})
+                        } 
+                        //name="coffemilk"
                         >
                             <img src={CoffeMilk} alt="" />
                             <h3>Cafe con Leche <br /> $7.00</h3>
@@ -70,16 +70,20 @@ const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak
                     <div className={styles.breakfast}>
                         <button 
                         className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="sandwich"
+                        onClick={()=>
+                            addItemToOrder({id: 3, name: "Sandwich"})
+                        } 
+                        //name="sandwich"
                         >
                             <img src={Sandwich} alt="" />
                             <h3>Sandwich <br /> $10.00</h3>
                         </button>
                         <button 
                         className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="juice"
+                        onClick={()=>
+                            addItemToOrder({id: 4, name: "Jugo"})
+                        }  
+                        //name="juice"
                         >
                             <img src={Juice} alt="" />
                             <h3>Jugo <br /> $7.00</h3>
@@ -90,7 +94,6 @@ const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak
                 <div className={styles.order}>
                     
                         <ReusableTable client={client} setClient={setClient} order={order} setOrder={setOrder} 
-                        menubreak={menubreak} setMenuBreak={setMenuBreak}
                         />
                     
                 </div>

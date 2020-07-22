@@ -39,6 +39,8 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
     });
   }
 
+
+  //CON ESTA FUNCION QUEREMOS GENERAR EL NUMERO DE ORDEN
   const numOrder = () => {
     console.log('me puchas', order);
     setOrder(order + 1)
