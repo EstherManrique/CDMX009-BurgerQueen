@@ -6,7 +6,7 @@ import Stepper from "@kiwicom/orbit-components/lib/Stepper";
 import IconDelete from '../../assets/imgs/trash.png';
 
 const ReusableTable = ({ client }) => {
-    console.log(client)
+    // console.log(client)
 
     return (
         <div className={styles.containerTable}>

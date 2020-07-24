@@ -70,24 +70,25 @@ function App() {
   });
 
   const addItemToOrder = (product) => {
-    let newItems = []
+    let newItems = [];
 
     if (client.items.length > 0) {
-      newItems = client.items.reduce((acc, item) => {
+      newItems.push(client.items.reduce((acc, item) => {
         return (item.id === product.id)
           ? [...acc, { ...item, quantity: item.quantity + 1 }]
           : [...acc, { ...product, quantity: 1 }]
-      }, [])
+      }, []))
     } else {
-      newItems = [{ ...product, quantity: 1 }]
+      newItems.push([{ ...product, quantity: 1 }])
     }
+
 
     setClient({
       ...client,
       items: newItems
     })
-  }
 
+  }
 
   return (
     <div className="App">
