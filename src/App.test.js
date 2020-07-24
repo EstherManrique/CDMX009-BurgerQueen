@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-import WaiterRegister from './components/WaiterRegister';
+import BackgLogin from './components/BackgLogin';
 
 /* test('renders learn react link', () => {
   const { getByText } = render(<App />);
@@ -20,5 +20,17 @@ it('should take a snapshot', () => {
   expect(asFragment(<App />)).toMatchSnapshot()
  });
 
+  test('renders Mesero', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Mesero/i);
+  expect(linkElement).toBeInTheDocument();
+}); 
+
+
+test('renders Cocina', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Cocina/i);
+  expect(linkElement).toBeInTheDocument();
+}); 
 
 
