@@ -1,8 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, getAllByText } from '@testing-library/react';
 import App from './App';
+import RestDay from './components/RestDay'
 
 import BackgLogin from './components/BackgLogin';
+import InitWaiters from './components/InitWaiter';
 
 /* test('renders learn react link', () => {
   const { getByText } = render(<App />);
@@ -15,6 +17,12 @@ import BackgLogin from './components/BackgLogin';
   expect(screen.getByRole('button')).not.toHaveAttribute('disabled')
 }); */
 
+describe('Aplicaicón', () => {
+  test('Representa la App de BQ', () => {
+    render( < App /> );
+  });
+});
+
 it('should take a snapshot', () => {
   const { asFragment } = render(<App />)  
   expect(asFragment(<App />)).toMatchSnapshot()
@@ -26,11 +34,11 @@ it('should take a snapshot', () => {
   expect(linkElement).toBeInTheDocument();
 }); 
 
-
 test('renders Cocina', () => {
   const { getByText } = render(<App />);
   const linkElement = getByText(/Cocina/i);
   expect(linkElement).toBeInTheDocument();
 }); 
+
 
 

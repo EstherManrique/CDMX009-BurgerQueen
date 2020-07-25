@@ -1,34 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Sandwich from '../../assets/imgs/sandwich.jpg';
-import Juice from '../../assets/imgs/orange-juice.jpg';
-import CoffeMilk from '../../assets/imgs/coffe-milk.jpg';
-import Coffe from '../../assets/imgs/american-coffe.jpg';
-
 import db from '../../firebase';
 import Logo from '../Logo/Logo';
 import Boton from '../Boton/Boton'
 import styles from './styles.module.css';
 import ReusableTable from '../ReusableTable';
+//import { currencyFormatter } from '../../utils'
 
+const BreakFast = ({ client, setClient, products, addItemToOrder }) => {
 
-const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak }) => {
-
-/*     const handleButtonsBreak = (e) => {  //VA EN EL ONCHANGE
-        const { name, value } = e.target;
-        setMenuBreak({ ...menubreak, [name]: value });
-    }
- */
-
-    const handleOrderBreak = (e) => {  //VA EN EL ONCLICK
-        e.preventDefault();
-        console.log('Agregar cafe');
-        db.collection('orders').add(menubreak)
-          .then(() => {
-            console.log('orden guardada en Firestore exitosamente')
-          });
-    }
+    console.log('aqui está la order', client);
 
     return (
 
@@ -46,53 +28,23 @@ const BreakFast = ({ client, setClient, order, setOrder, menubreak, setMenuBreak
 
             <div className={styles.container}>
                 <div className={styles.menuBreakfast}>
-                    <div className={styles.breakfast}>
-
+                    {products.map((product, index )=> (
                         <button
-                        className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="coffeblack"
+                            className={styles.bgMenu}
+                            onClick={() => addItemToOrder(product)}
+                            key={index}
                         >
-                            <img src={Coffe} alt="" />
-                            <h3>Cafe Americano <br /> $5.00</h3>
+                            <img src={`${process.env.PUBLIC_URL}/images/products/${product.image}`} alt={product.name} />
+                            <h3>{product.name} <br />{currencyFormatter.format(product.price)}</h3>
                         </button>
-
-                        <button 
-                        className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="coffemilk"
-                        >
-                            <img src={CoffeMilk} alt="" />
-                            <h3>Cafe con Leche <br /> $7.00</h3>
-                        </button>
-                    </div>
-
-                    <div className={styles.breakfast}>
-                        <button 
-                        className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="sandwich"
-                        >
-                            <img src={Sandwich} alt="" />
-                            <h3>Sandwich <br /> $10.00</h3>
-                        </button>
-                        <button 
-                        className={styles.bgMenu} 
-                        onClick={handleOrderBreak} 
-                        name="juice"
-                        >
-                            <img src={Juice} alt="" />
-                            <h3>Jugo <br /> $7.00</h3>
-                        </button>
-                    </div>
+                    ))}
                 </div>
 
                 <div className={styles.order}>
-                    
-                        <ReusableTable client={client} setClient={setClient} order={order} setOrder={setOrder} 
-                        menubreak={menubreak} setMenuBreak={setMenuBreak}
-                        />
-                    
+
+                    <ReusableTable client={client} setClient={setClient} products={products} addItemToOrder={addItemToOrder}
+                    />
+
                 </div>
             </div>
 
