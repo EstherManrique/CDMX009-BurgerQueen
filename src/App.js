@@ -70,16 +70,19 @@ function App() {
   });
 
   const addItemToOrder = (product) => {
-    let newItems = [];
+    let newItems = client.items;
+    console.log(newItems)
 
     if (client.items.length > 0) {
+      console.log("entró el if")
       newItems.push(client.items.reduce((acc, item) => {
         return (item.id === product.id)
           ? [...acc, { ...item, quantity: item.quantity + 1 }]
           : [...acc, { ...product, quantity: 1 }]
       }, []))
     } else {
-      newItems.push([{ ...product, quantity: 1 }])
+      newItems.push({ ...product, quantity: 1 })
+      console.log("entró el else")
     }
 
 
