@@ -17,8 +17,8 @@ import InitWaiters from './components/InitWaiter';
   expect(screen.getByRole('button')).not.toHaveAttribute('disabled')
 }); */
 
-describe('Aplicaicón', () => {
-  test('Representa la App de BQ', () => {
+describe('Aplicatión', () => {
+  test('Represent the burger queen app', () => {
     render( < App /> );
   });
 });
