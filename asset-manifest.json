@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/CDMX009-BurgerQueen/static/css/main.d6b516ce.chunk.css",
-    "main.js": "/CDMX009-BurgerQueen/static/js/main.273d71f1.chunk.js",
-    "main.js.map": "/CDMX009-BurgerQueen/static/js/main.273d71f1.chunk.js.map",
+    "main.css": "/CDMX009-BurgerQueen/static/css/main.93c89127.chunk.css",
+    "main.js": "/CDMX009-BurgerQueen/static/js/main.730fc340.chunk.js",
+    "main.js.map": "/CDMX009-BurgerQueen/static/js/main.730fc340.chunk.js.map",
     "runtime-main.js": "/CDMX009-BurgerQueen/static/js/runtime-main.54058947.js",
     "runtime-main.js.map": "/CDMX009-BurgerQueen/static/js/runtime-main.54058947.js.map",
     "static/css/2.af3c1da9.chunk.css": "/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.529e1e2b.chunk.js": "/CDMX009-BurgerQueen/static/js/2.529e1e2b.chunk.js",
-    "static/js/2.529e1e2b.chunk.js.map": "/CDMX009-BurgerQueen/static/js/2.529e1e2b.chunk.js.map",
+    "static/js/2.1c1e565e.chunk.js": "/CDMX009-BurgerQueen/static/js/2.1c1e565e.chunk.js",
+    "static/js/2.1c1e565e.chunk.js.map": "/CDMX009-BurgerQueen/static/js/2.1c1e565e.chunk.js.map",
     "index.html": "/CDMX009-BurgerQueen/index.html",
-    "precache-manifest.29b1bbf510e0ec7c1e935ffcb16c5b87.js": "/CDMX009-BurgerQueen/precache-manifest.29b1bbf510e0ec7c1e935ffcb16c5b87.js",
+    "precache-manifest.85f2aedad2520e1bec829649141fb3c6.js": "/CDMX009-BurgerQueen/precache-manifest.85f2aedad2520e1bec829649141fb3c6.js",
     "service-worker.js": "/CDMX009-BurgerQueen/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.d6b516ce.chunk.css.map": "/CDMX009-BurgerQueen/static/css/main.d6b516ce.chunk.css.map",
-    "static/js/2.529e1e2b.chunk.js.LICENSE.txt": "/CDMX009-BurgerQueen/static/js/2.529e1e2b.chunk.js.LICENSE.txt",
+    "static/css/main.93c89127.chunk.css.map": "/CDMX009-BurgerQueen/static/css/main.93c89127.chunk.css.map",
+    "static/js/2.1c1e565e.chunk.js.LICENSE.txt": "/CDMX009-BurgerQueen/static/js/2.1c1e565e.chunk.js.LICENSE.txt",
     "static/media/BackgLogin.module.css": "/CDMX009-BurgerQueen/static/media/hat-chef.dae19e72.png",
     "static/media/Logo_BQ.png": "/CDMX009-BurgerQueen/static/media/Logo_BQ.0268b4ca.png",
     "static/media/Trastes.jpg": "/CDMX009-BurgerQueen/static/media/Trastes.0f0c7370.jpg",
-    "static/media/american-coffe.jpg": "/CDMX009-BurgerQueen/static/media/american-coffe.1b6f942d.jpg",
     "static/media/burger-lunch.jpg": "/CDMX009-BurgerQueen/static/media/burger-lunch.40a3a3da.jpg",
     "static/media/chess.jpg": "/CDMX009-BurgerQueen/static/media/chess.c4b1a556.jpg",
     "static/media/coffe-break.png": "/CDMX009-BurgerQueen/static/media/coffe-break.7e790d20.png",
-    "static/media/coffe-milk.jpg": "/CDMX009-BurgerQueen/static/media/coffe-milk.fff1124b.jpg",
     "static/media/cola.jpg": "/CDMX009-BurgerQueen/static/media/cola.a5b4a2c3.jpg",
     "static/media/cuadrado-bordes.png": "/CDMX009-BurgerQueen/static/media/cuadrado-bordes.9f3d0fd9.png",
     "static/media/doble-burger.jpg": "/CDMX009-BurgerQueen/static/media/doble-burger.f2c4647d.jpg",
@@ -29,9 +27,7 @@
     "static/media/styles.module.css": "/CDMX009-BurgerQueen/static/media/salsas.4c8a0914.png",
     "static/media/fries.jpg": "/CDMX009-BurgerQueen/static/media/fries.1fe2ad01.jpg",
     "static/media/onion-rings.jpg": "/CDMX009-BurgerQueen/static/media/onion-rings.86affa9d.jpg",
-    "static/media/orange-juice.jpg": "/CDMX009-BurgerQueen/static/media/orange-juice.cdc27de8.jpg",
     "static/media/pink-circle.png": "/CDMX009-BurgerQueen/static/media/pink-circle.85efadd3.png",
-    "static/media/sandwich.jpg": "/CDMX009-BurgerQueen/static/media/sandwich.0f2d917c.jpg",
     "static/media/simple-burger.jpg": "/CDMX009-BurgerQueen/static/media/simple-burger.8ac4d3d5.jpg",
     "static/media/waiter.png": "/CDMX009-BurgerQueen/static/media/waiter.6d902638.png",
     "static/media/water-bottle.jpeg": "/CDMX009-BurgerQueen/static/media/water-bottle.668c04ae.jpeg"
@@ -39,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.54058947.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.529e1e2b.chunk.js",
-    "static/css/main.d6b516ce.chunk.css",
-    "static/js/main.273d71f1.chunk.js"
+    "static/js/2.1c1e565e.chunk.js",
+    "static/css/main.93c89127.chunk.css",
+    "static/js/main.730fc340.chunk.js"
   ]
 }
