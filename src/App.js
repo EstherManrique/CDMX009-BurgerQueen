@@ -19,7 +19,8 @@ import KitchenRegister from './components/KitchenRegister';
 import 'react-bootstrap/dist/react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import products from '../src/utils/products.js'
+import {products} from '../src/utils/products.js';
+
 
 import './App.css';
 

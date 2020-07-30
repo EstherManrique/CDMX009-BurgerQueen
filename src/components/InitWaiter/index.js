@@ -16,9 +16,10 @@ import styles from './styles.module.css';
 import DateTime from '../DateTime/DateTime';
 
 const options = [
-  { label: 'Guadalupe Sánchez', value: 'Guadalupe Sánchez' },
-  { label: 'Azucena Villaseñor', value: 'Azucena Villaseñor' },
-  { label: 'Lalo García', value: 'Lalo García' }
+  { label: 'Lupita S.', value: 'Lupita S.' },
+  { label: 'Azucena V.', value: 'Azucena V.' },
+  { label: 'Lalo M.', value: 'Lalo M.' },
+  { label: 'Gilberto M.', value: 'Gilberto M.' }
 ]
 
 const InitWaiters = ({ client, setClient, order, setOrder }) => {

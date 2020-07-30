@@ -29,4 +29,4 @@ const products = [
   }
 ]
 
-export default products;
+export {products}

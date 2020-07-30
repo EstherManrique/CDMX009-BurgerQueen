@@ -7,7 +7,7 @@ import KitchenTable from '../ReusableTable/kitchenTable';
 
 import Bell from '../../assets/imgs/cuadrado-bordes.png';
 
-const Kitchen = ({ client, setClient, order, setOrder }) => {
+const Kitchen = ({ client, setClient, order, setOrder, orders }) => {
 
     return (
         <div>
@@ -27,7 +27,7 @@ const Kitchen = ({ client, setClient, order, setOrder }) => {
                 </div>
 
                 <div className={styles.secondDivision}>
-                    <KitchenTable client={client} setClient={setClient} order={order} setOrder={setOrder} />
+                    <KitchenTable client={client} setClient={setClient} order={order} setOrder={setOrder} orders={orders}/>
                 </div>
 
                 <div className={styles.thirdDivision}>
