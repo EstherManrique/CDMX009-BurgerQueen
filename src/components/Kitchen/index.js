@@ -24,7 +24,7 @@ const Kitchen = ({ client, setClient }) => {
         });
     }, [])
 
-    let texto = 'la orden está lista, enviando notificación a mesero'
+    let texto = 'Orden lista en cocina, enviando notificación a mesero'
     const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
     //texto.preventDefault();
     //hablar(texto);
