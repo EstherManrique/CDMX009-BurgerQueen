@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/CDMX009-BurgerQueen/static/css/main.93c89127.chunk.css",
-    "main.js": "/CDMX009-BurgerQueen/static/js/main.730fc340.chunk.js",
-    "main.js.map": "/CDMX009-BurgerQueen/static/js/main.730fc340.chunk.js.map",
+    "main.css": "/CDMX009-BurgerQueen/static/css/main.86b1ff2f.chunk.css",
+    "main.js": "/CDMX009-BurgerQueen/static/js/main.b78921cf.chunk.js",
+    "main.js.map": "/CDMX009-BurgerQueen/static/js/main.b78921cf.chunk.js.map",
     "runtime-main.js": "/CDMX009-BurgerQueen/static/js/runtime-main.54058947.js",
     "runtime-main.js.map": "/CDMX009-BurgerQueen/static/js/runtime-main.54058947.js.map",
     "static/css/2.af3c1da9.chunk.css": "/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.1c1e565e.chunk.js": "/CDMX009-BurgerQueen/static/js/2.1c1e565e.chunk.js",
-    "static/js/2.1c1e565e.chunk.js.map": "/CDMX009-BurgerQueen/static/js/2.1c1e565e.chunk.js.map",
+    "static/js/2.6b3c5d08.chunk.js": "/CDMX009-BurgerQueen/static/js/2.6b3c5d08.chunk.js",
+    "static/js/2.6b3c5d08.chunk.js.map": "/CDMX009-BurgerQueen/static/js/2.6b3c5d08.chunk.js.map",
     "index.html": "/CDMX009-BurgerQueen/index.html",
-    "precache-manifest.85f2aedad2520e1bec829649141fb3c6.js": "/CDMX009-BurgerQueen/precache-manifest.85f2aedad2520e1bec829649141fb3c6.js",
+    "precache-manifest.861253b685ccc1cf1c396ee524e8dd3e.js": "/CDMX009-BurgerQueen/precache-manifest.861253b685ccc1cf1c396ee524e8dd3e.js",
     "service-worker.js": "/CDMX009-BurgerQueen/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/CDMX009-BurgerQueen/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.93c89127.chunk.css.map": "/CDMX009-BurgerQueen/static/css/main.93c89127.chunk.css.map",
-    "static/js/2.1c1e565e.chunk.js.LICENSE.txt": "/CDMX009-BurgerQueen/static/js/2.1c1e565e.chunk.js.LICENSE.txt",
+    "static/css/main.86b1ff2f.chunk.css.map": "/CDMX009-BurgerQueen/static/css/main.86b1ff2f.chunk.css.map",
+    "static/js/2.6b3c5d08.chunk.js.LICENSE.txt": "/CDMX009-BurgerQueen/static/js/2.6b3c5d08.chunk.js.LICENSE.txt",
     "static/media/BackgLogin.module.css": "/CDMX009-BurgerQueen/static/media/hat-chef.dae19e72.png",
     "static/media/Logo_BQ.png": "/CDMX009-BurgerQueen/static/media/Logo_BQ.0268b4ca.png",
     "static/media/Trastes.jpg": "/CDMX009-BurgerQueen/static/media/Trastes.0f0c7370.jpg",
@@ -35,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.54058947.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.1c1e565e.chunk.js",
-    "static/css/main.93c89127.chunk.css",
-    "static/js/main.730fc340.chunk.js"
+    "static/js/2.6b3c5d08.chunk.js",
+    "static/css/main.86b1ff2f.chunk.css",
+    "static/js/main.b78921cf.chunk.js"
   ]
 }
