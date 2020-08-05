@@ -7,7 +7,7 @@ import {
   //Link
 } from "react-router-dom";
 
-import { currencyFormatter } from '../src/utils/index'
+//import { currencyFormatter } from '../src/utils/index'
 
 import RestDay from './components/RestDay';
 import Kitchen from './components/Kitchen';
@@ -92,8 +92,6 @@ function App() {
     console.log("aquí esta el calculateAmount", price)
 
     return price * quantity
-
-
   }
 
 

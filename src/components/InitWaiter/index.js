@@ -46,7 +46,7 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
   const numOrder = () => {
     setOrder(order + 1)
   }
-  console.log('me puchas', order);
+  //console.log('me puchas', order);
 
   return (
 
@@ -55,7 +55,7 @@ const InitWaiters = ({ client, setClient, order, setOrder }) => {
         <Logo nameClass={"logoSmallInitWaiter"} />
         <div className={styles.reg_date}>
           <Link to="waiterregister">
-          <Boton text={"Registros"} allstyles={"buttonGoRgWaiter "} />
+            <Boton text={"Registros"} allstyles={"buttonGoRgWaiter"} />
           </Link>
           <DateTime />
         </div>

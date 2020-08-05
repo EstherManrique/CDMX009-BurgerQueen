@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 import ReusableTable from '../ReusableTable';
 import { currencyFormatter } from '../../utils'
 
-const BreakFast = ({ client, setClient, products, addItemToOrder, deleteItem }) => {
+const BreakFast = ({ client, setClient, products, addItemToOrder, deleteItem, numOrder }) => {
 
     console.log('aqui está la order', client);
 
@@ -51,7 +51,7 @@ const BreakFast = ({ client, setClient, products, addItemToOrder, deleteItem }) 
 
                 <div className={styles.order}>
 
-                    <ReusableTable client={client} setClient={setClient} products={products} addItemToOrder={addItemToOrder} deleteItem={deleteItem}
+                    <ReusableTable client={client} setClient={setClient} products={products} addItemToOrder={addItemToOrder} deleteItem={deleteItem} numOrder={numOrder}
                     />
 
                 </div>

@@ -7,9 +7,9 @@ import DateTime from '../DateTime/DateTables';
 
 import styles from './styles.module.css';
 
-const status = [
+/* const status = [
     { label: 'Cancelar', value: 'Cancelar' },
-]
+] */
 
 const TableWaiter = ({ client, order, orders }) => {
 
