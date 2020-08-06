@@ -1,4 +1,4 @@
-import React, { useEffect, useState }  from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../Logo/Logo';
 import Boton from '../Boton/Boton';
 import { Link } from 'react-router-dom';
@@ -11,19 +11,19 @@ import Bell from '../../assets/imgs/cuadrado-bordes.png';
 
 const Kitchen = ({ client, setClient }) => {
 
-    const [order, setOrder ] = useState();
-    
+    const [order, setOrder] = useState();
+
     const { orderId } = useParams()
-    
+
     useEffect(() => {
-        db.collection('ordersfood').doc(orderId).get().then((querySnapshot) => {                     
-        
-        setOrder(querySnapshot.data());
- 
+        db.collection('ordersfood').doc(orderId).get().then((querySnapshot) => {
+
+            setOrder(querySnapshot.data());
+
         });
     }, [])
 
-    let texto = 'la orden está lista, enviando notificación a mesero'
+    let texto = 'la orden número 123, de la mesa 28, está lista, enviando notificación a mesero';
     const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
     //texto.preventDefault();
     //hablar(texto);
@@ -46,7 +46,7 @@ const Kitchen = ({ client, setClient }) => {
                 </div>
 
                 <div className={styles.secondDivision}>
-                   {order && <KitchenTable client={client} setClient={setClient} order={order} />} 
+                    {order && <KitchenTable client={client} setClient={setClient} order={order} />}
                 </div>
 
                 <div className={styles.thirdDivision}>
@@ -57,9 +57,9 @@ const Kitchen = ({ client, setClient }) => {
                     </div>
 
                     <div className={styles.printAccount}>
-                        <button  onClick={() => hablar(texto)} >
+                        <button onClick={() => hablar(texto)} >
                             <img src={Bell} alt="" className={styles.printImg} />
-                        </button>   
+                        </button>
                     </div>
 
                     <div className={styles.departureInTime}>
